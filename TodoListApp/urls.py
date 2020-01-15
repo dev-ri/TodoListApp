@@ -7,7 +7,7 @@ from django.urls import path
 from django.contrib import admin
 from django.contrib.auth.views import LoginView, LogoutView
 from app import forms, views
-
+from todo.views import todo, addtodo, deletetodo
 
 urlpatterns = [
     path('', views.home, name='home'),
@@ -26,5 +26,8 @@ urlpatterns = [
          ),
          name='login'),
     path('logout/', LogoutView.as_view(next_page='/'), name='logout'),
+    path('todo/', todo, name='todo'),
+    path('addtodo/', addtodo),
+    path('deletetodo/<int:item_id>/', deletetodo),
     path('admin/', admin.site.urls),
 ]

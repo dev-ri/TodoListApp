@@ -98,7 +98,7 @@
     <Content Include="app\templates\app\layout.html" />
     <Content Include="app\templates\app\login.html" />
     <Content Include="app\templates\app\loginpartial.html" />
-    <Content Include="todo\templates\todo\index.html" />
+    <Content Include="todo\templates\todo\todo.html" />
   </ItemGroup>
   <ItemGroup>
     <None Include="readme.html">
